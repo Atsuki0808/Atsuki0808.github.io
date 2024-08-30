@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+p {
+    font-family: 'Raieway', sans-serif; 
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+/* header area */
+.nav{
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
+
+.nav h1{
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+}
+
+.nav h1 a{
+    font-family: 'Oswald', sans-serif;
+    color: #96746b;
+    text-decoration: none;
+}
+
+.nav ul{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top: 1em;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin-left: 1em;
+}
+.nav ul a{
+    font-family: 'Raieway', sans-serif; 
+    font-weight: 700;
+    color: #312a26;
+    text-decoration: none;
+}
+
+
+/* 2. banner area */
+.banner{
+    background:url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 670px;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translateY(-50%);
+    width: 45%;
+}
+
+.banner-text h2{
+    color: #c7a17a;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.banner-text h2 span{
+    color: #96746b;
+}
+
+.banner-text p{
+    color: #fff;
+}
+
+.banner a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: #312a26;
+    color: #fff;
+    font-family: 'Raieway', sans-serif; 
+    font-weight:  700;
+    margin-top: 1em;
+}
+
+
+/* 3. ads area */
+.ads{
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-items{
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.ads-item1{
+    margin-right: 3%;
+    background-image: url('../images/ads-img1.jpg');
+}
+
+.ads-item2{
+    background-image: url('../images/ads-img2.jpg');
+}
+
+.ads-text{
+    position: absolute;
+    top: 40%;
+    bottom: 10%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.ads-text h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.ads-text a{
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 5px #312a26;
+}
+
+/* 4. Merchandise area */
+.merch{
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #c7a17a;
+}
+
+.section-header h2{
+    text-transform: uppercase;
+    color: #312a26;
+}
+
+.section-header hr{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 25%;
+    margin: auto;
+}
+
+.merch-gallery{
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.merch-items{
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.merch-items img{
+    width: 100%;
+    height: 350px;
+    /* object-fit property is used
+    to specify how an <img> shoule 
+    be resized to fit its container 
+    
+    cover - the image keeps its
+    aspect ratio and fills the given
+    dimension. the image will be
+    clipped to fit
+    */
+    object-fit: cover;
+}
+
+.last-item{
+    margin-right: 0;
+}
+
+/* 5. discount area */
+
+.discount{
+    width: 85%;
+    margin: 4em auto;
+    background-image: url('../images/discount-img.jpg');
+    background-position: center;
+    height: 350px;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.discount-text{
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.discount-text h2{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.discount-text a{
+    background-color: aliceblue;
+    position: absolute;
+    transform: translateX(-40%);
+    padding: 10px;
+    color: #312a26;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+
+/* 7. ads area 2 */
+
+.ads2{
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads2-items{
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.ads2-item1{
+    margin-right: 3%;
+    background-image: url('../images/ads-img3.jpg');
+}
+
+.ads2-item2{
+    background-image: url('../images/ads-img4.jpg');
+}
+
+.ads2-item3{
+    margin-right: 3%;
+    background-image: url('../images/ads-img5.jpg');
+}
+
+.ads2-item4{
+    background-image: url('../images/ads-img6.jpg');
+}
+
+.ads2-text{
+    position: absolute;
+    top: 50%;
+    bottom: 10%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.ads2-text h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.ads2-text a{
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 5px #312a26;
+}
+
+/* 8. reservation area */
+.reservation{
+    width: 85%;
+    margin: 4em auto;
+}
+
+form{
+    overflow: auto;
+}
+
+.form-group{
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    float: left;
+    width: 49.5%;
+    border-radius: 5px;
+    padding: 2em;
+    height: 650px;
+}
+
+form input,
+form label,
+form select,
+form textarea{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Raleway' sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+form label{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: .5em;
+}
+
+.res-time{
+    text-align: center;
+}
+
+.res-time *{
+    width: auto;
+}
+
+form p{
+    margin: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+
+form h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form h3::after{
+    content: "";
+    background-image: url('../images/reservation-cards.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+
+.res-agreement *{
+    width: auto;
+}
+
+
+
+
+
+
+
+
+/* 9.front footer area */
+
+.front-footer{
+    background-image: url('../images/footer-img.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.info-container{
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+
+}
+
+.info-list{
+    font-weight: 700;
+    width: 24%;
+    color: #fff;
+    text-align: left;
+}
+
+.info-contents{
+    margin-top: 20px;
+}
+
+.info-contents h2{
+    text-transform: uppercase;
+}
+
+.info-contents p{
+    color: antiquewhite;
+}
+
+/* Opening hours */
+.info-list table{
+    width: 90%;
+}
+
+.info-list thead{
+    margin: auto;
+}
+
+
+/* Latest post */
+
+/* Contact us */
+h2.search_area{
+    margin: 20px 0;
+}
+.search_form input{
+    height: 40px;
+}
+
+.search_form button{
+    height: 40px;
+    padding: 5px;
+    background-color: antiquewhite;
+
+}
+
+
+
+
+
+/* footer area */
+.footer{
+    height: 50px;
+    background-color:#19100F;
+    border: solid 2px #d2761a;
+}
+.footer-container{
+    width: 85%;
+    margin: auto;
+    margin-top:10px;
+    
+}
+
+.footer1{
+    /* height: 30px; */
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding-left: 30px;
+    font-family: 'Oswald', sans-serif;
+    border: solid 2px yellow;
+
+}
+
+.footer2{
+    /* height: 30px; */
+    width: 34%;
+    float: left;
+    text-align: center;
+    padding-left: 30px;
+    border: solid 2px yellow;
+}
+
+.footer img{
+    width: 20px;
+}
+
+.footer3{
+    color: #fff;
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding-left: 30px;
+    border: solid 2px yellow;
+}
